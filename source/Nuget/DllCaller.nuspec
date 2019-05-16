@@ -2,18 +2,22 @@
 <package>
   <metadata minClientVersion="3.3">
     <id>DllCaller</id>
-    <version>1.1.3</version>
+    <version>1.2.0</version>
     <authors>diontools</authors>
     <owners>diontools</owners>
-	<projectUrl>https://github.com/diontools/DllCaller</projectUrl>
+    <projectUrl>https://github.com/diontools/DllCaller</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Dynamic PInvoke method generation by interface. This library is for dynamically specifying the path of DllImport. Support only C# project.</description>
     <copyright>Copyright 2017</copyright>
     <contentFiles>
       <files include="**/NativeDll.cs" buildAction="Compile" />
     </contentFiles>
+    <dependencies>
+        <group targetFramework="net35"></group>
+        <group targetFramework="net40"></group>
+    </dependencies>
   </metadata>
   <files>
-    <file src="../DllCaller/NativeDll.cs" target="contentFiles/cs/net35" />
+    <file src="../DllCaller/NativeDll.cs" target="contentFiles/cs/net" />
   </files>
 </package>
