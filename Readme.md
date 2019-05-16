@@ -1,3 +1,5 @@
+[![NuGet version](https://badge.fury.io/nu/DllCaller.svg)](https://www.nuget.org/packages/DllCaller)
+
 # DllCaller
 インターフェースから、PInvokeメソッドが実装されたクラスを動的に生成します。
 
